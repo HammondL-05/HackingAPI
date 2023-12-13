@@ -7,7 +7,14 @@
 
 import SwiftUI
 
+struct NewsStory: Identifiable {
+    let id = UUID()
+    let title: String
+    let url: URL
+}
+
 struct LukeView: View {
+    let stories: [NewsStory] = [NewsStory]()
     var body: some View {
         Text("Hello Luke")
     }
